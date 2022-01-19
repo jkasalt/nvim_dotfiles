@@ -22,6 +22,7 @@ use 'tpope/vim-surround'
 use 'tpope/vim-fugitive'
 use 'tpope/vim-rhubarb'
 use 'tpope/vim-commentary'
+use 'preservim/tagbar'
 use 'ludovicchabant/vim-gutentags' -- Automatic tags management
 use 'junegunn/vim-easy-align'
 -- use 'glepnir/lspsaga.nvim'
@@ -41,6 +42,7 @@ use 'ray-x/cmp-treesitter'
 
 -- --- Language Specific Helpers ---
 use 'jalvesaq/Nvim-R'
+use 'lervag/vimtex'
 use 'vim-pandoc/vim-pandoc'
 use 'vim-pandoc/vim-pandoc-syntax'
 use 'cespare/vim-toml'
