@@ -9,6 +9,10 @@ require "luca.options"
 require "luca.base16"
 require "luca.toggleterm"
 require "luca.nvim-autopairs"
+require "luca.nvim-commenter"
+require "luca.vimtex"
+require "luca.nvim-r"
 
-vim.cmd "colo kanagawa"
+vim.cmd([[colo melange]])
+vim.g.vscode_style = "dark"
 vim.cmd "hi! link Conceal texMathGroup"

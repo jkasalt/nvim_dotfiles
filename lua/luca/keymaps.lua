@@ -15,7 +15,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Toggle "Left Explore"
-keymap("n", "<leader>e", ":Lex 30 <CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle <CR>", opts)
 
 -- Resize windows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)

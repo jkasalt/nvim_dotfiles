@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["Nvim-R"] = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/Nvim-R",
+    url = "https://github.com/jalvesaq/Nvim-R"
+  },
   ["alpha-nvim"] = {
     config = { "\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0" },
     loaded = true,
@@ -115,6 +120,11 @@ _G.packer_plugins = {
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["darcula-solid.nvim"] = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/darcula-solid.nvim",
+    url = "https://github.com/briones-gabriel/darcula-solid.nvim"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/fidget.nvim",
@@ -124,6 +134,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
@@ -135,10 +151,15 @@ _G.packer_plugins = {
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
-  ["nvim-autopairs"] = {
+  ["lush.nvim"] = {
     loaded = true,
-    path = "/home/luca/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
+  melange = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/melange",
+    url = "https://github.com/savq/melange"
   },
   ["nvim-base16"] = {
     loaded = true,
@@ -150,6 +171,11 @@ _G.packer_plugins = {
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -159,6 +185,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -185,30 +217,40 @@ _G.packer_plugins = {
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["seoul256.vim"] = {
+  ["seoul256.nvim"] = {
     loaded = true,
-    path = "/home/luca/.local/share/nvim/site/pack/packer/start/seoul256.vim",
-    url = "https://github.com/junegunn/seoul256.vim"
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/seoul256.nvim",
+    url = "https://github.com/shaunsingh/seoul256.nvim"
+  },
+  ["surround.nvim"] = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/surround.nvim",
+    url = "https://github.com/ur4ltz/surround.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tex-conceal.vim"] = {
-    loaded = true,
-    path = "/home/luca/.local/share/nvim/site/pack/packer/start/tex-conceal.vim",
-    url = "https://github.com/KeitaNakamura/tex-conceal.vim"
-  },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
   vimtex = {
     loaded = true,
     path = "/home/luca/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/luca/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 
@@ -217,6 +259,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
