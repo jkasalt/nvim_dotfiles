@@ -20,6 +20,15 @@ return require('packer').startup(function()
     }
     use 'ur4ltz/surround.nvim'
     use 'tpope/vim-surround'
+    use { '/windwp/nvim-autopairs',
+        config = function()
+            require "nvim-autopairs".setup({
+                check_ts = true,
+                enable_check_bracket_line = false,
+                ignored_next_char = "[%w%.]",
+            })
+        end
+    }
 
     -- Completion
     use 'hrsh7th/nvim-cmp'

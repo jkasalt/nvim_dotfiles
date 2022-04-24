@@ -119,7 +119,4 @@ cmp.setup {
         behavior = cmp.ConfirmBehavior.Replace,
         select = false,
     },
-    window = {
-        documentation = "native"
-    }
 }
