@@ -1,3 +1,9 @@
+local fn = vim.fn
+local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+    PACKER_BOOTSTRAP = fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
+end
+
 vim.cmd([[
   augroup packer_user_config
     autocmd!
@@ -20,7 +26,7 @@ return require('packer').startup(function()
     }
     use 'ur4ltz/surround.nvim'
     use 'tpope/vim-surround'
-    use { '/windwp/nvim-autopairs',
+    use { 'windwp/nvim-autopairs',
         config = function()
             require "nvim-autopairs".setup({
                 check_ts = true,
@@ -29,6 +35,12 @@ return require('packer').startup(function()
             })
         end
     }
+    use { 'mizlan/iswap.nvim',
+        config = function()
+            require "iswap".setup {}
+        end
+    }
+
 
     -- Completion
     use 'hrsh7th/nvim-cmp'
@@ -50,8 +62,6 @@ return require('packer').startup(function()
     -- Colorscheme
     use "ellisonleao/gruvbox.nvim"
     use "rebelot/kanagawa.nvim"
-    use 'RRethy/nvim-base16'
-    use 'Mofiqul/vscode.nvim'
     use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
     use "shaunsingh/seoul256.nvim"
     use "savq/melange"
@@ -75,11 +85,18 @@ return require('packer').startup(function()
         'goolord/alpha-nvim',
         requires = { 'kyazdani42/nvim-web-devicons' },
         config = function()
-            require 'alpha'.setup(require 'alpha.themes.startify'.config)
+            require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
         end
     }
     use {
         'lewis6991/gitsigns.nvim',
         config = function() require('gitsigns').setup() end
     }
+    use { 'nvim-orgmode/orgmode', config = function()
+        require('orgmode').setup {}
+    end
+    }
+    if PACKER_BOOTSTRAP then
+        require('packer').sync()
+    end
 end)

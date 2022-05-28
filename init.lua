@@ -11,6 +11,7 @@ require "luca.toggleterm"
 require "luca.nvim-commenter"
 require "luca.vimtex"
 require "luca.nvim-r"
+require "luca.orgmode"
 
 vim.cmd([[colo melange]])
 vim.g.vscode_style = "dark"

@@ -1,5 +1,4 @@
 local o = vim.opt
-local hi = require("vim.highlight")
 
 o.backup = false
 o.clipboard = "unnamedplus"
@@ -28,7 +27,7 @@ o.shiftwidth = 4
 o.tabstop = 4
 o.cursorline = true
 o.number = true
-o.relativenumber = true
+o.number = true
 o.numberwidth = 2
 o.signcolumn = "yes"
 o.wrap = false
@@ -37,9 +36,11 @@ o.sidescrolloff = 8
 o.conceallevel = 2
 o.background = "dark"
 o.autowriteall = true
+o.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 vim.g.tex_conceal = "abdgm"
+vim.g.vimtex_quickfix_enabled = 0
 
-vim.opt.guifont = "monospace:h17"
+vim.opt.guifont = "Fira_Code:h9"
 
 vim.opt.shortmess:append "c"
 
